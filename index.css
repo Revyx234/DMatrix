@@ -1,0 +1,81 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(img/beautiful-blue-fox-logo-mixed-with-cyberpunk-neon-lights_524305-11206.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: transparent ;
+    border-radius: 75%;
+}
+
+body:hover{
+    background: none;
+    backdrop-filter: blur(50px);
+    .head{
+            color: white;
+            font: bold;
+    }
+    .homepage a{
+        color: rgb(255, 255, 255);
+    }
+}
+
+  body::before{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background: rgba(0, 0, 0, .1,);
+    z-index: -1;
+    background: linear-gradient(90deg, transparent, red, transparent);
+    transition: .5s;
+  }
+
+  body:hover::before{
+    right: 100%;
+  }
+
+  body::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, darkblue, transparent);
+    transition: .5s;
+  }
+
+  body:hover::after{
+    left: 100%;
+  }
+
+.head{
+    text-align: center;
+    color: rgb(40, 40, 138);
+}
+
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.homepage{
+    gap:  1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
